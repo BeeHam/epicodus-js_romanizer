@@ -1,6 +1,9 @@
 describe("romanNumerator", function(){
   it("returns 'I', when 1 is entered", function()  {
-    expect(romanNumerator(1)).to.equal("I");
+    expect(romanNumerator(1)).to.eql("I");
+  });
+  it("returns three 'I's when 3 is entered", function() {
+    expect(romanNumerator(3)).to.eql("III");
   });
 });
 
